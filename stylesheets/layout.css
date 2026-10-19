@@ -1,3 +1,468 @@
 * {
   box-sizing: border-box;
 }
+/* * Общий контейнер */
+.container {
+  width: 90%;
+  max-width: 1440%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* * Слайд 1 */
+.section-1 {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.paper-box {
+  width: 80%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.paper-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.paper-text {
+  position: absolute;
+  top: 41%;
+  left: 17%;
+}
+
+.author-block {
+  margin-bottom: 25px;
+}
+
+.red-label {
+  color: #cc2027;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.red-text {
+  color: #cc2027;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: normal;
+}
+/* * Слайд 2 */
+.section-2 {
+  position: relative;
+  padding: 60px 0;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #1a1a1a;
+  margin: 0;
+}
+
+.red-dash {
+  width: 40px;
+  height: 5px;
+  background-color: #cc2027;
+  margin: 70px 0 40px 0; /* 70px от верхней линии */
+}
+
+.header120 {
+  font-size: 120px;
+  line-height: 0.95;
+  font-weight: bold;
+  margin-bottom: 60px;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: -3px; /* Сжимаем буквы, чтобы заголовок влез в экран! */
+}
+
+.text-mono {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 70px; /* Уравняли с верхним отступом (было 100px) */
+  max-width: 800px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.star-img {
+  position: absolute;
+  bottom: 100px; /* Подняли звезду выше, чтобы она не прилипала к линии */
+  right: 0;
+  width: 150px;
+}
+
+/* Слайд 3 */
+
+.section-3 {
+  position: relative;
+  padding: 40px 0;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.header80 {
+  font-size: 80px;
+  line-height: 1.1;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.globe-img {
+  width: 100px;
+}
+
+.history-data {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.history-item {
+  border-bottom: 2px solid #1a1a1a;
+  padding: 15px 0;
+  width: 150%;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.header32 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: normal;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.section-3 b {
+  font-weight: normal;
+}
+
+.red-color {
+  color: #cc2027;
+}
+
+.green-color {
+  color: #4b8b3b;
+}
+
+/* Картинка с бумажкой */
+.section-3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -5.5%;
+  width: 50%;
+  height: 95%;
+  background-image: url("../images/slaid3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: 2;
+}
+/* Слайд 4 */
+.section-4 {
+  padding: 80px 0;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.features-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.star-small {
+  width: 100px;
+}
+
+.feature-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.feature-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.feature-item {
+  width: 48%;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.feature-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.red-dash {
+  width: 40px;
+  height: 5px;
+  background-color: #cc2027;
+  margin-bottom: 30px;
+}
+
+.feature-icon {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.header36 {
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: normal;
+  font-family: "JetBrains Mono", monospace;
+  max-width: 350px;
+  margin-top: 50px;
+}
+/* Слайд 5 */
+
+.section-5 {
+  padding: 60px 0;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.archive-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.suitcase-box {
+  width: 1050px;
+  height: 850px;
+  background-image: url("../images/chemodanslaid5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 70;
+}
+
+.letters-img {
+  width: 160px;
+  height: auto;
+  display: block;
+  margin-left: 300px;
+}
+/* Слайд 6 */
+
+.section-6 {
+  padding: 60px 0;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.section-6 .header80 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.g-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.g-image-box {
+  width: 60%;
+  position: relative;
+}
+
+.paper-g-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.stamp-fsm {
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  width: 140px;
+  z-index: 2;
+}
+
+.g-text-box {
+  width: 40%;
+  padding-top: 100px;
+}
+
+.g-letters {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 10px;
+}
+
+.g-alphabet {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 25px;
+}
+
+.g-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.g-desc {
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 10px;
+}
+
+.red-color {
+  color: #cc2027;
+  font-weight: bold;
+}
+
+/* Слайд 7 */
+.section-7 {
+  padding: 60px 0;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.system-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.globe-red-img {
+  width: 100px;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.card {
+  width: 32%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 100;
+  display: block;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.card-desc {
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "JetBrains Mono", monospace;
+}
+/* Слайд 8 */
+.section-8 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0 120px 0;
+}
+
+.final-globe {
+  width: 55%;
+}
+
+.globe-img-final {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.final-info {
+  width: 45%;
+  position: relative;
+  padding-left: -10px;
+  padding-top: 180px;
+}
+
+.star-top-right {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 100px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.info-role {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+  width: 30%;
+}
+
+.plane-icon {
+  width: 60px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.info-name {
+  font-size: 32px;
+  line-height: 1.1;
+  font-family: "JetBrains Mono", monospace;
+  width: 50%;
+}
+
+.barcode-img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-top: 50px;
+}
