@@ -421,23 +421,21 @@ section {
   font-family: "Fantasque Sans Mono", monospace;
 }
 
+/* Слайд 8 */
 .section-8 {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 60px 0;
+}
+
+.slide-8-wrapper {
   position: relative;
+  width: 100%;
   aspect-ratio: 4 / 3;
 }
 
-.bg-image {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.bg-image img {
+.bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
